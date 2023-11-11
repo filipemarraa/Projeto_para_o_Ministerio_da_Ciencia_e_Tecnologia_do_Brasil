@@ -19,4 +19,3 @@ if not zip_encontrado:
     print("Nenhum arquivo .zip encontrado no diretório.")
 
 
-#FLAMENGO
