@@ -17,3 +17,6 @@ for item in os.listdir(caminho):
 
 if not zip_encontrado:
     print("Nenhum arquivo .zip encontrado no diretório.")
+
+
+    #TESTE
