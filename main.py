@@ -7,7 +7,7 @@ from datetime import datetime
 import pytz
 
 # Caminho base onde os arquivos serão salvos e manipulados
-caminho_base = "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\auto_mcti"
+caminho_base = "/Users/imanichi/Documents/teste mcti"
 
 # URL real do site que estamos raspando
 url = 'https://repositorio.dados.gov.br/seges/detru/'
@@ -68,11 +68,15 @@ if response.status_code == 200:
                     dados_filtrados.to_csv(caminho_nova_planilha, index=False)
 
                     # Excluir o arquivo antigo
+                    caminho_planilha_zip = "/Users/imanichi/Documents/teste mcti/siconv_convenio.csv.zip"
                     try:
                         os.remove(caminho_planilha)
+                        os.remove(caminho_planilha_zip)
                         print(f"O arquivo original foi excluído: {caminho_planilha}")
+                        print(f"O arquivo original zip foi excluído: {caminho_planilha_zip}")
                     except OSError as e:
                         print(f"Erro ao deletar o arquivo original: {e.strerror}")
+                        print(f"Erro ao deletar o arquivo zip original: {e.strerror}")
                     except Exception as e:
                         print(f"Erro ao descompactar ou processar o arquivo {file_url}: {e}")
                 except Exception as e:
