@@ -12,7 +12,6 @@ O projeto foi desenvolvido por um grupo de cinco alunos da faculdade IDP, com o 
 - Pedro Henrique Imanichi
 - Luca Braggio
 - Lucas Rocha Dantas
-- Matheus
 
 ## Funcionalidades Principais
 
