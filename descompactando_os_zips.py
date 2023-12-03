@@ -1,7 +1,7 @@
 import os
 from zipfile import ZipFile
 
-caminho = "/Users/filipemarra/Desktop/Projetos/Web_Scrapping"
+caminho = "/Users/Lucas Rocha Dantas/Documents/Lucas Rocha Dantas/Vida profissional/Cypher/Cypher Tech/Projeto_para_o_Ministerio_da_Ciencia_e_Tecnologia_do_Brasil"
 zip_encontrado = False
 
 for item in os.listdir(caminho):
