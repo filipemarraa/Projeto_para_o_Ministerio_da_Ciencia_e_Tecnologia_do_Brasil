@@ -134,7 +134,7 @@ if response.status_code == 200:
     print(f"Link da Planilha: https://docs.google.com/spreadsheets/d/{spreadsheet_id}/edit")
 
     drive_payload = {
-        'role': 'reader',
+        'role': 'writer',
         'type': 'anyone'
     }
     drive_response = requests.post(f'https://www.googleapis.com/drive/v3/files/{spreadsheet_id}/permissions', headers=headers, json=drive_payload)
